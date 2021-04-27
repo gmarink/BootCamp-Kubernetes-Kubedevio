@@ -1,7 +1,7 @@
-###BootCampo Kubernetes do Kubedev.io Abril/2021
+### BootCamp Kubernetes do Kubedev.io Abril/2021
 
 
-#Principais comandos:
+# Principais comandos:
 
 - docker info
 - docker version
@@ -13,7 +13,7 @@
 - docker stats (id ou apelido do container)
 - docker rmi (nome da imagem)
 
-Algumas flags que podemos utilizar com ele:
+# Algumas flags que podemos utilizar com ele:
 
     -i permite interagir com o container
     -t associa o seu terminal ao terminal do container
@@ -23,7 +23,7 @@ Algumas flags que podemos utilizar com ele:
     -d executa o container em background
     -v /pasta/host:/pasta/container cria um volume '/pasta/container' dentro do container com o conteúdo da pasta '/pasta/host' do host
 
-Mapeamento de Portas
+# Mapeamento de Portas
 
 -p host:container
 
