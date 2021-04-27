@@ -1,0 +1,5 @@
+CRIAÇÃO DO DOCKERFILE PARA A INICIALIZAÇÃO DE IMAGENS NECESSARIOS PARA DISPONIBILIZAR O SISTEMA
+
+
+docker image build -t ubuntu-curl . 
+(Construção de imagem docker informando o nome da imagem e o local do contexto [path])
