@@ -11,7 +11,7 @@
 - docker run (nome da imagem)
 - docker ps -a
 - docker stats (id ou apelido do container)
-- docker rmi (nome da imagem)
+- docker rm (nome ou ID da imagem)
 - docker image history (nome da imagem)
 - docker image prune
 
