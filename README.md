@@ -14,6 +14,7 @@
 - docker rm (nome ou ID da imagem)
 - docker image history (nome da imagem)
 - docker image prune
+- docker container ls -a
 
 # Algumas flags que podemos utilizar com ele:
 
