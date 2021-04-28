@@ -1,3 +1,3 @@
-FROM ubuntu
-RUN apt-get update
-RUN apt-get install curl --yes
+FROM ubuntu:20.10
+RUN apt-get update && apt-get install curl --yes
+

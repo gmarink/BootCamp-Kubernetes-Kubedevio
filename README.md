@@ -12,6 +12,8 @@
 - docker ps -a
 - docker stats (id ou apelido do container)
 - docker rmi (nome da imagem)
+- docker image history (nome da imagem)
+- docker image prune
 
 # Algumas flags que podemos utilizar com ele:
 
@@ -28,3 +30,15 @@
 -p host:container
 
 ex: docker run -it -p 8080:80 nginx
+
+# Opções de uso no Dockerfile
+- FROM => Inicializa o build de uma imagem a partir de uma imagem base
+- RUN => Excecuta um comando
+- LABEL => Adiciona metadados a imagem
+- CMD => Define o comando e/ou os parâmetros padrão
+- EXPOSE => Define que o container precisa expor a porta em questão
+- ENV => Define variáveis de ambiente
+- ADD => Copia arquivos ou diretórios e adiciona ao sistema de arquivos da imagem
+- ENTRYPOINT => Ajuda você a configurar um contêiner que pode ser executado com um executavel 
+- VOLUME => Define volumes que devem ser definidos
+- WORKDIR => Define o seu diretório corrente
