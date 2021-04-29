@@ -1,0 +1,64 @@
+KUBERNETES
+
+Resiliência e escabilidade nas aplicações;
+
+Balanciamento de cargas;
+
+Service discovery para procurar um processo específico;
+
+Alta disponibilidade;
+
+Microserviços
+
+Centralizar e Gerenciar todos container num unico sistema
+
+K3D - Facilita a criação de clusters kubernetes
+https://k3d.io/#installation
+
+KUBECTL - Gerenciador de cluster kubernetes
+https://kubernetes.io/docs/tasks/tools/
+
+sudo apt-get install -y apt-transport-https ca-certificates curl
+sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+sudo apt-get update
+sudo apt-get install -y kubectl
+
+
+
+
+$ k3d cluster create meuprimeirocluster  --servers 2 --agents 2
+[com a flag ---no-lb cria cluster sem loadbalance]
+
+$ kubeclt get nodes (verificar clusters)
+
+
+$ k3d cluster list 
+$ k3d cluster delete
+
+
+ELEMENTOS QUE FAZEM PARTE DO DEPLOY DO KUBERNETES
+
+POD - Nele é executado o container [compartilhamento de recursos]
+ATENÇÃO!  - Não colocar todos container dentro de um mesmo POD
+
+Arquivo de Manifesto[yaml]. Todas as informações para criação 
+
+apiVersion: [grupo de recurso a ser utilizado]
+$ kubectl api-resources
+kind: [qual o tipo de objeto qu vou criar]
+metadata: [informações adicinais]
+  name: meupode
+  spec: [especificação do container]
+   - name: site
+      image: kubedev.io/nginx-color:blue
+      ports:
+        - containerPort: 80
+
+
+$ kubeclt create -f .\meupod.yaml
+
+
+$ kubectl get pods
+
+$ kubectl describe pod meupod
