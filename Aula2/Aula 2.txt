@@ -70,5 +70,8 @@ DEPLOYMENT gerencia a atualização da aplicação garantindo alta disponibilida
 
 SERVICE discovery
 
-- Cluser API
+- Cluser IP
 - Service Node Port
+
+
+$ kubectl rollout undo deployment api
