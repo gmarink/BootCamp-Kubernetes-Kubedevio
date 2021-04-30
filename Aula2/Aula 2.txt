@@ -62,3 +62,13 @@ $ kubeclt create -f .\meupod.yaml
 $ kubectl get pods
 
 $ kubectl describe pod meupod
+
+
+POD - REPLICASET -DEPLOYMENT
+
+DEPLOYMENT gerencia a atualização da aplicação garantindo alta disponibilidade
+
+SERVICE discovery
+
+- Cluser API
+- Service Node Port
